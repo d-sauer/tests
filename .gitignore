@@ -1,0 +1,23 @@
+# Gradle
+**/.gradle
+**/build/
+
+# Ignore Gradle GUI config
+**/gradle-app.setting
+
+**/gradle/wrapper
+# Avoid ignoring Gradle wrapper jar file
+!gradle/wrapper
+
+# Ignore IntelliJ files
+/.idea/
+**/*.iws
+**/*.ipr
+**/*.iml
+**/target/
+**/overlays/
+
+# Ignore Eclipse project files
+**/.settings/
+**/.project
+**/.classpath

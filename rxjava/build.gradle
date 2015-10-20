@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'org.slf4j:slf4j-api:1.7.12'
+}
