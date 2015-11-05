@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'org.apache.activemq:apache-activemq:5.12.1'
+    compile 'org.slf4j:slf4j-api:1.7.12'
+}
