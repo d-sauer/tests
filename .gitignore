@@ -1,3 +1,5 @@
+/activemq-data
+
 # Gradle
 **/.gradle
 **/build/
