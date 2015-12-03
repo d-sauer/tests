@@ -1,0 +1,31 @@
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.0.RELEASE")
+    }
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+configurations {
+    dev
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:1.3.0.RELEASE")
+    compile 'org.slf4j:slf4j-api:1.7.13'
+
+    dev("org.springframework.boot:spring-boot-devtools")
+}
+
+bootRun {
+    classpath = sourceSets.main.runtimeClasspath + configurations.dev
+}
